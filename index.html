@@ -9,56 +9,68 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="main">
+    <div class="main">
       В одной деревне жил священник и был у него
-      <span id="cat1">КОТ</span>
-      <div id="img_box1">
-        <img id="cat_img1" src="cat.png" width="120px" /><img
-          id="mouse_img1"
-          src="mouse.png"
-          width="50px"
-        />
-      </div>
-      . Священник <span id="cat2">КОТ</span>
-      <div id="img_box2">
-        <img id="cat_img2" src="cat.png" width="120px" /><img
-          id="mouse_img2"
-          src="mouse.png"
-          width="50px"
-        />
-      </div>
+      <span class="box">
+        <span class="cat">КОТ</span>
+        <div class="img_box">
+          <img class="cat_img1" src="cat.png" width="120px" /><img
+            class="mouse_img"
+            src="mouse.png"
+            width="50px"
+          />
+        </div>
+      </span>
+      . Священник
+      <span class="box">
+        <span class="cat">КОТ</span>
+        <div class="img_box">
+          <img class="cat_img2" src="cat.png" width="120px" /><img
+            class="mouse_img"
+            src="mouse.png"
+            width="50px"
+          />
+        </div>
+      </span>
       а очень любил, поскольку был одинок. И вот однажды вечером он не обнаружил
       своего питомца в доме, естественно, забеспокоился и бросился его искать.
       Нашел довольно быстро, поскольку домик и участок у него были скромные —
-      <span id="cat3">КОТ</span>
-      <div id="img_box3">
-        <img id="cat_img3" src="cat.png" width="120px" /><img
-          id="mouse_img3"
-          src="mouse.png"
-          width="50px"
-        />
-      </div>
+      <span class="box">
+        <span class="cat">КОТ</span>
+        <div class="img_box">
+          <img class="cat_img3" src="cat.png" width="120px" /><img
+            class="mouse_img"
+            src="mouse.png"
+            width="50px"
+          />
+        </div>
+      </span>
       залез на верхушку дерева и сидел там, зыркая глазами. Видимо, собака
-      загнала. Увидев хозяина <span id="cat4">КОТ</span>
-      <div id="img_box4">
-        <img id="cat_img4" src="cat.png" width="120px" /><img
-          id="mouse_img4"
-          src="mouse.png"
-          width="50px"
-        />
-      </div>
+      загнала. Увидев хозяина
+      <span class="box">
+        <span class="cat">КОТ</span>
+        <div class="img_box">
+          <img class="cat_img4" src="cat.png" width="120px" /><img
+            class="mouse_img"
+            src="mouse.png"
+            width="50px"
+          />
+        </div>
+      </span>
       жалобно замяукал, да так что сердце у того разрывалось от жалости. Но как
       снять перепуганное животное? Уговоры и приманивания эффекта на дали… Но
       мы, не в средние века живем — священник придумал такой ход: привязать к
       дереву веревку и, с помощью машины, наклонить его к земле. Потом
-      <span id="cat5">КОТ</span>
-      <div id="img_box5">
-        <img id="cat_img5" src="cat.png" width="120px" /><img
-          id="mouse_img5"
-          src="mouse.png"
-          width="50px"
-        />
-      </div>
+      <span class="box">
+        <span class="cat">КОТ</span>
+        <div class="img_box">
+          <img class="cat_img5" src="cat.png" width="120px" /><img
+            class="mouse_img"
+            src="mouse.png"
+            width="50px"
+          />
+        </div>
+      </span>
       или сам спрыгнет, или он его возьмет. Веревку он конечно, привязал и
       дерево машиной наклонил. Да вот только коэффициент прочности веревки в
       расчет не взял… В общем, веревка лопнула в момент близости дерева с землей
@@ -68,7 +80,9 @@
       body {
         margin: 0;
         padding: 0;
+        font-size: 22px;
       }
+
       p {
         font-size: 22px;
         margin: 0;
@@ -77,11 +91,11 @@
         margin: 0 auto;
         width: 60%;
       }
-      #mouse_img1,
-      #mouse_img2,
-      #mouse_img3,
-      #mouse_img4,
-      #mouse_img5 {
+      .mouse_img,
+      .mouse_img,
+      .mouse_img,
+      .mouse_img,
+      .mouse_img {
         position: relative;
         left: -100px;
         top: -20px;
